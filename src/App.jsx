@@ -75,12 +75,12 @@ export default function App() {
 
   return (
     <>
-      <div className=" flex justify-center items-center h-screen">
+      <div className=" flex justify-center items-center h-screen p-4 w-full">
 
-        <div className=" bg-slate-100 rounded-md p-8 h-fit  w-fit lg:w-8/12 shadow-lg flex flex-col justify-center items-center">
+        <div className=" bg-slate-100 rounded-md p-8 h-fit  max-w-full lg:w-8/12 shadow-lg flex flex-col justify-center items-center">
 
           <h1 className="text-6xl font-bold mb-5">Todo app </h1>
-          <div className="w-full">
+          <div className="maX-w-full">
             {!isEditing && (
               <TodoForm addTodos={addTodos} currentTodoText={currentTodoText} setCurrentTodoText={setCurrentTodoText} />
             )}
